@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
-
 import 'constants.dart';
-import 'features/presentation/views/splasg_screen.dart';
+import 'features/splash/presentation/views/splasg_screen.dart';
 
 void main() {
   runApp(const BooklyApp());
