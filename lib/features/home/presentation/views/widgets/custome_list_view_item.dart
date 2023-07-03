@@ -7,19 +7,16 @@ class CustumeListViewItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    return SizedBox(
-      height: MediaQuery.of(context).size.height * .3,
-      child: AspectRatio(
-        aspectRatio: 2.7/4,
-        child: Container(
-          decoration:  BoxDecoration(
-            borderRadius: BorderRadius.circular(15),
-            color: Colors.green,
-            image: const DecorationImage(
-              fit: BoxFit.fill,
-              image: AssetImage(AssetsData.testImage),
-            ),
+    return AspectRatio(
+      aspectRatio: 2.7/4,
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 8),
+        decoration:  BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          color: Colors.green,
+          image: const DecorationImage(
+            fit: BoxFit.fill,
+            image: AssetImage(AssetsData.testImage),
           ),
         ),
       ),
