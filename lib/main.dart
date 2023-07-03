@@ -17,6 +17,7 @@ class BooklyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: kPrimeryColor,
+        textTheme: TextTheme()
       ),
       home: const SplashView(),
     );
