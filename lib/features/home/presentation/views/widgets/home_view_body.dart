@@ -10,7 +10,7 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 24),
+      padding: EdgeInsets.symmetric(horizontal: 30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -48,15 +48,17 @@ class BestSeleerListViewItem extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(width: 8),
-          const Column(
+          const SizedBox(width: 30),
+          Column(
             children: [
-              Text("hhhhhh"),
-              Text("hhhhhh"),
-              Text("hhhhhh"),
-              Text("hhhhhh"),
-              Text("hhhhhh"),
-              Text("hhhhhh"),
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.5,
+                child: const Text(
+                  "Harry Potter And the Gobelt of Fire",
+                  style: Styles.textStyle20,
+                  maxLines: 2,
+                ),
+              ),
             ],
           ),
         ],
