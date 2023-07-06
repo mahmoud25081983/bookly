@@ -17,15 +17,14 @@ class HomeViewBody extends StatelessWidget {
           CustomeAppBAr(),
           FeaturedBookListView(),
           SizedBox(height: 50),
-          Text("Best Seller", style: Styles.titleMudium,),
-          SizedBox(height: 50),
+          Text("Best Seller", style: Styles.textStyle18),
+          SizedBox(height: 20),
           BestSeleerListViewItem()
         ],
       ),
     );
   }
 }
-
 
 class BestSeleerListViewItem extends StatelessWidget {
   const BestSeleerListViewItem({super.key});
@@ -37,24 +36,31 @@ class BestSeleerListViewItem extends StatelessWidget {
       child: Row(
         children: [
           AspectRatio(
-        aspectRatio: 2.5 / 4,
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8),
-            color: Colors.green,
-            image: const DecorationImage(
-              fit: BoxFit.fill,
-              image: AssetImage(AssetsData.testImage),
+            aspectRatio: 2.5 / 4,
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: Colors.green,
+                image: const DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage(AssetsData.testImage),
+                ),
+              ),
             ),
           ),
-        ),
-      ),
-          Column(
-            children: [],
+          const SizedBox(width: 8),
+          const Column(
+            children: [
+              Text("hhhhhh"),
+              Text("hhhhhh"),
+              Text("hhhhhh"),
+              Text("hhhhhh"),
+              Text("hhhhhh"),
+              Text("hhhhhh"),
+            ],
           ),
         ],
       ),
     );
   }
 }
-
