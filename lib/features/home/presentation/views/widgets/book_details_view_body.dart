@@ -1,20 +1,25 @@
 import 'package:flutter/material.dart';
 
 import 'custome_book_details_appbar.dart';
+import 'custome_book_item.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 8.0),
+    var width = MediaQuery.of(context).size.width;
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 30),
       child: Column(
         children: [
-          CustomeBookDetailsAppBar()
+          const CustomeBookDetailsAppBar(),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: width * 0.17),
+            child: const CustomeBookImage(),
+          ),
         ],
       ),
     );
   }
 }
-
