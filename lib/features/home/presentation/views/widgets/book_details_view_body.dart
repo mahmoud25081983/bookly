@@ -20,12 +20,20 @@ class BookDetailsViewBody extends StatelessWidget {
             child: const CustomeBookImage(),
           ),
           const SizedBox(height: 43),
-          Text("The Junk Book", style: Styles.textStyle30.copyWith(fontWeight: FontWeight.bold)),
+          Text("The Junk Book",
+              style: Styles.textStyle30.copyWith(fontWeight: FontWeight.bold)),
           const SizedBox(height: 6),
-           Opacity(
+          Opacity(
             opacity: 0.7,
-            child: Text("Rudyard Kipling", style: Styles.textStyle18.copyWith(fontStyle:FontStyle.italic))),
-          const BookRating(),
+            child: Text(
+              "Rudyard Kipling",
+              style: Styles.textStyle18.copyWith(
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ),
+          const SizedBox(height: 18),
+          const BookRating(mainAxisAlignment: MainAxisAlignment.center),
         ],
       ),
     );
