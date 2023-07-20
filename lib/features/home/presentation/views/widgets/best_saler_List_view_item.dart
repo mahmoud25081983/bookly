@@ -6,8 +6,8 @@ import '../../../../../core/utils/assets.dart';
 import '../../../../../core/utils/styles.dart';
 import 'booking_ratting.dart';
 
-class BestSeleerListViewItem extends StatelessWidget {
-  const BestSeleerListViewItem({super.key});
+class BookListViewItem extends StatelessWidget {
+  const BookListViewItem({super.key});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
