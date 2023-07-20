@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/assets.dart';
 
 class CustomeAppBAr extends StatelessWidget {
@@ -14,7 +16,10 @@ class CustomeAppBAr extends StatelessWidget {
         children: [
           Image.asset(AssetsData.logo, height: 25,), 
           const Spacer(),
-          IconButton(onPressed: (){}, icon: const Icon(FontAwesomeIcons.magnifyingGlass, size: 24,))
+          IconButton(onPressed: (){
+            GoRouter.of(context).push(AppRouter.kSearchViewBody);
+            
+          }, icon: const Icon(FontAwesomeIcons.magnifyingGlass, size: 24,))
         ],
       ),
     );
