@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'core/utils/app_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:equatable/equatable.dart';
 
 void main() {
   runApp(const BooklyApp());
