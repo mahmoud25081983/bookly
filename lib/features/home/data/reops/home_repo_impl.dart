@@ -18,18 +18,30 @@ class HomeRepoImpl implements HomeRepo {
       List<BookModel> books = [];
 
       for (var item in data["items"]) {
-        books.add(BookModel.fromJson(item));
+          try {
+          books.add(BookModel.fromJson(item));
+        } catch (e) {
+          books.add(BookModel.fromJson(item));
+        }
       }
 
       return right(books);
     } catch (e) {
-      return left(ServerFailuer());
+      if (e is DioException) {
+        return left(
+          ServerFailure.fromDioException(e),
+        );
+      }
+      return left(
+        ServerFailure(
+          e.toString(),
+        ),
+      );
     }
   }
 
   @override
   Future<Either<Failuer, List<BookModel>>> fetchFeaturedBooks() {
-    // TODO: implement fetchFeaturedBooks
     throw UnimplementedError();
   }
 }
