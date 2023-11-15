@@ -6,7 +6,7 @@ import '../../../data/reops/home_repo.dart';
 
 part 'featured_books_state.dart';
 
-class FeaturedBooksCubit extends Cubit<FeaturedBooksCubitState> {
+class FeaturedBooksCubit extends Cubit<FeaturedBooksState> {
   FeaturedBooksCubit(this.homeRepo) : super(FeaturedBooksCubitInitial());
   final HomeRepo homeRepo;
 
