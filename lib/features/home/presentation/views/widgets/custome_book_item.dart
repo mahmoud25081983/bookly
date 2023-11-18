@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/assets.dart';
-
 class CustomeBookImage extends StatelessWidget {
   const CustomeBookImage({super.key, required this.imageUrl});
   final String imageUrl;
